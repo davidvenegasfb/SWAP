@@ -72,7 +72,7 @@ Donde modificamos una sentencia para que realize el comando que usamos al princi
 
 Y hasta aquí esta práctica
 
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/11.png)
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/10.png)
 
 
 
