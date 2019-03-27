@@ -14,7 +14,7 @@ Mandando así al ssh la salida de la creacion del tar
 
 * Podemos ver aquí como lo hemos ejecutamos un ls en una máquina y no hay nada
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/1.png)
-* Aquí vemos como ejecutamos el comando en otra m´quina conectada previamente por ssh
+* Aquí vemos como ejecutamos el comando en otra máquina conectada previamente por ssh
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/2.png)
 * Y aquí vemos como la máquina primera ya si tiene el arvhivo
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/3.png)
