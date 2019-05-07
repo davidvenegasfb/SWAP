@@ -18,11 +18,11 @@ Vamos a generar un certificado SSL autofirmado en Ubuntu Server:
 SSLCertificateFile /etc/apache2/ssl/apache.crt
 SSLCertificateKeyFile /etc/apache2/ssl/apache.key
 
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/3.png)
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/3.png)
 
 Activamos el sitio default-ssl y reiniciamos apache:
 
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/4.png)
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/4.png)
 
 Por último, y como queremos que la granja nos permita usar el HTTPS, debemos
 configurar el balanceador para que también acepte este tráfico (puerto 443). Para
@@ -30,21 +30,21 @@ hacer esto, copiaremos la pareja de archivos (el .crt y el .key) a todas las má
 copiarlos al otro servidor y al balanceador.
 
 # NO SE HACERLO
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/5.png)
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/5.png)
 
 En el segundo servidor debemos activar el sitio default-ssl y reiniciar apache (como
 hicimos en el primer servidor). 
 
 # HAY QUE HACER ANTES LO OTRO
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/6.png)
+
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/6.png)
 
 En el balanceador pondremos la ruta a la carpeta donde hayamos copiado el apache.crt y el apache.key. Después, en el balanceador nginx debemos añadir lo siguiente al archivo /etc/nginx/conf.d/default.conf y reiniciarlo:
 
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/7.png)
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/7.png)
 
 ## 4.2 Configuración del cortafuegos
 
 Creamos un script con las órdenes para una configuración básica de un servidor web y lo ejecutamos:
 
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/8.png)
-
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/8.png)
