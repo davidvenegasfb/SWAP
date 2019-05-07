@@ -29,13 +29,10 @@ configurar el balanceador para que también acepte este tráfico (puerto 443). P
 hacer esto, copiaremos la pareja de archivos (el .crt y el .key) a todas las máquinas de la granja web. Vamos a copiar los certifdicados en los archivos apache.crt y apache.key que generamos en el primer servidor en el paso anterior vamos a
 copiarlos al otro servidor y al balanceador.
 
-# NO SE HACERLO
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/5.png)
 
 En el segundo servidor debemos activar el sitio default-ssl y reiniciar apache (como
 hicimos en el primer servidor). 
-
-# HAY QUE HACER ANTES LO OTRO
 
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica4/imagenes/6.png)
 
