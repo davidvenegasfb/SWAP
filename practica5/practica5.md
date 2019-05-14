@@ -53,16 +53,32 @@ En primer lugar debemos de tener en cuenta que los datos pueden estar actualizá
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/2.png)
 
 Ahora ya podemos usar mysqldump para guardar los datos.
+
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/3.png)
 
 Si hacemos un vim de contactos.sql veremos:
+
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/4.png)
 
 Y desbloqueamos por último las tablas:
+
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/5.png)
 
 VARIAS COSAS CON CONEXIÓN
 
 Creamos la tabla en la segunda máquina para hacerlo con un solo comando:
+
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/6.png)
 
+
+## 5.4 Replicación de BD mediante una configuración maestro-esclavo
+
+Lo primero que debemos hacer es la configuración de mysql del maestro, para lo que vamos a editar /etc/mysql/my.cnf con varias configuraciones tal y como vemos con:
+>vim /etc/mysql/my.cnf
+
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/7.png)
+
+Y reiniciamos el servicio con:
+>/etc/init.d/mysql restart
+
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/8.png)
