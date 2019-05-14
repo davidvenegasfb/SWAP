@@ -8,4 +8,4 @@
 
 Vamos a crear una BD en MySQL e insertar algunos datos. Así tendremos datos con los cuales hacer las copias de seguridad:
 
-![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/imagenes/1.png)
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/1.png)
