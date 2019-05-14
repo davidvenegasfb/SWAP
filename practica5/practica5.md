@@ -2,7 +2,9 @@
 ### Autores: David Joaquín González-Venegas Guerra-Librero y Marina Hurtado Rosales
 ### Correos: davidvenegasfb@correo.ugr.es; marinahurtado@correo.ugr.es
 
-## 5.2 Crear un tar con ficheros locales y copiarlos en un equipo remoto
+## 5.1 Crear un tar con ficheros locales y copiarlos en un equipo remoto
+
+NECESITO CONEXIÓN
 
 ## 5.2 Crear una BD e insertar datos
 
@@ -39,9 +41,28 @@ O que nos diga los tipos de datos de la tabla:
 
 ## 5.3 Replicar una BD MySQL con mysqldump
 
+Vamos a usar mysqldump para generar copias de seguridad de BD.
+
+Podemos ver todas las opciones disponibles con el comando:
+>mysqldump --help
+
+En primer lugar debemos de tener en cuenta que los datos pueden estar actualizándose constantemente en el servidor de BD principal. En este caso, antes de hacer la copia de seguridad en el archivo .SQL debemos evitar que se acceda a la BD para cambiar nada. Para ello haremos:
+
+>FLUSH TABLES WITH READ LOCK;
+
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/2.png)
+
+Ahora ya podemos usar mysqldump para guardar los datos.
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/3.png)
+
+Si hacemos un vim de contactos.sql veremos:
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/4.png)
+
+Y desbloqueamos por último las tablas:
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/5.png)
+
+VARIAS COSAS CON CONEXIÓN
+
+Creamos la tabla en la segunda máquina para hacerlo con un solo comando:
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/6.png)
 
