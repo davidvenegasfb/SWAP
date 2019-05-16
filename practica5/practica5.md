@@ -4,7 +4,10 @@
 
 ## 5.1 Crear un tar con ficheros locales y copiarlos en un equipo remoto
 
-NECESITO CONEXIÓN
+Vamos a crear un tar.gz con un directorio de un equipo y dejarlo en otro mediante ssh, mediante el comando:
+>tar czf - directorio | ssh equipodestino 'cat > ~/tar.tgz'
+
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/0.0.png)
 
 ## 5.2 Crear una BD e insertar datos
 
