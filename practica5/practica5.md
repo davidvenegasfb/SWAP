@@ -67,12 +67,20 @@ Y desbloqueamos por último las tablas:
 
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/5.png)
 
-VARIAS COSAS CON CONEXIÓN
+Ahora vamos a la máquina 2 para copiar el archivo .SQL con todos los datos salvados desde la máquina principal con el comando:
+>scp 192.168.1.100/tmp/ejemplodb.sql /tmp/
+y habremos copiado desde la máquina principal (1) a la máquina secundaria (2) los
+datos que hay almacenados en la BD.
 
-Creamos la tabla en la segunda máquina para hacerlo con un solo comando:
+Con el archivo de copia de seguridad en el esclavo ya podemos importar la BD completa en el MySQL. Para ello, en un primer paso creamos la BD, con el comando:
+>CREATE DATABASE ‘ejemplodb’;
 
 ![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/6.png)
 
+En un segundo paso restauramos los datos contenidos en la BD (se crearán las
+tablas en el proceso):
+
+![img](https://github.com/davidvenegasfb/SWAP/blob/master/practica5/8.png)
 
 ## 5.4 Replicación de BD mediante una configuración maestro-esclavo
 
